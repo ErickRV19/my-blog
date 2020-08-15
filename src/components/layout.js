@@ -60,7 +60,12 @@ const Layout = ({ location, title, children }) => {
     >
       <div className="colorss"></div>
       <header>{header}</header>
-      <nav></nav>
+      <nav className="nav">
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        color
+      </nav>
       <main>{children}</main>
       <footer>
         ©{` `}

@@ -2,7 +2,14 @@
     background-color: rgba(55, 55, 255, 0.959);
     padding: 1em;
     position: relative;
-    margin-bottom: 4em;
+    margin-bottom: 3em;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 2em;
 }
 
 @media (max-width: 400px) {
