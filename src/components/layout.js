@@ -54,7 +54,7 @@ const Layout = ({ location, title, children }) => {
       style={{
         marginLeft: `auto`,
         marginRight: `auto`,
-        maxWidth: rhythm(24),
+        maxWidth: rhythm(30),
         padding: ` 0em 2em`,
       }}
     >
