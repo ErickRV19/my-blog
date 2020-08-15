@@ -5,7 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-import "../../node_modules/aos/dist/aos.css"
+import "aos/dist/aos.css"
 import AOS from "aos"
 
 const BlogIndex = ({ data, location }) => {
