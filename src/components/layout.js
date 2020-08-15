@@ -50,11 +50,12 @@ const Layout = ({ location, title, children }) => {
   }
   return (
     <div
+      className="movil"
       style={{
         marginLeft: `auto`,
         marginRight: `auto`,
         maxWidth: rhythm(24),
-        padding: `0em`,
+        padding: ` 0em 2em`,
       }}
     >
       <div className="colorss"></div>
