@@ -5,24 +5,19 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-import "aos/dist/aos.css"
-import AOS from "aos"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
-  AOS.init()
   return (
     <Layout location={location} title={siteTitle}>
-      <div data-aos="fade-up" className="info">
-        Excelente tenerte por aca de nuevo .
-      </div>
+      <div className="info">Excelente tenerte por aca de nuevo .</div>
       <SEO title="" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article data-aos="fade-up" key={node.fields.slug}>
+          <article key={node.fields.slug}>
             <link
               rel="stylesheet"
               href="https://unpkg.com/aos@next/dist/aos.css"
