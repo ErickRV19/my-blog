@@ -16,7 +16,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <div data-aos="fade-up" className="info">
-        Excelente tenerte por aca.
+        Excelente tenerte por aca de nuevo .
       </div>
       <SEO title="" />
       {posts.map(({ node }) => {
