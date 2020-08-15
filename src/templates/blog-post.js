@@ -12,13 +12,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
+  AOS.init()
   return (
     <Layout location={location} title={siteTitle}>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article>
+      <article data-aos="fade-up">
         <header>
           <h1
             style={{

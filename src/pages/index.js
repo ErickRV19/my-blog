@@ -23,6 +23,10 @@ const BlogIndex = ({ data, location }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article data-aos="fade-up" key={node.fields.slug}>
+            <link
+              rel="stylesheet"
+              href="https://unpkg.com/aos@next/dist/aos.css"
+            />
             <header>
               <h3
                 style={{
