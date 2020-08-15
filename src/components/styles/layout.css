@@ -5,6 +5,10 @@
     margin-bottom: 3em;
 }
 
+a {
+    color: #636363;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -15,11 +19,7 @@
 }
 
 a:hover {
-    color: #1aff66;
-}
-
-a:link {
-    color: #c5c9c6;
+    color: #000000;
 }
 
 @media (max-width: 400px) {
