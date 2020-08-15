@@ -10,6 +10,16 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 2em;
+    color: gray;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: #1aff66;
+}
+
+a:link {
+    color: #c5c9c6;
 }
 
 @media (max-width: 400px) {
