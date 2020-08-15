@@ -16,7 +16,7 @@ const Bio = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/Erick_profile.png/" }) {
         childImageSharp {
-          fixed(width: 90, height: 90) {
+          fixed(width: 55, height: 55) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -47,7 +47,7 @@ const Bio = () => {
         fixed={data.avatar.childImageSharp.fixed}
         alt={author.name}
         style={{
-          marginRight: rhythm(2 / 2),
+          marginRight: rhythm(1 / 2),
           marginBottom: 0,
           minWidth: 50,
           borderRadius: `100%`,
