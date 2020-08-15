@@ -61,9 +61,9 @@ const Layout = ({ location, title, children }) => {
       <div className="colorss"></div>
       <header>{header}</header>
       <nav className="nav">
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="/">Inicio</a>
+        <a href="/primer%20post/">Sobre mi</a>
+        <a href="https://erickrv19.github.io/">Contacto</a>
         color
       </nav>
       <main>{children}</main>
