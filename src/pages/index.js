@@ -14,10 +14,10 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Helmet>
+      <Helmet defer={false}>
         <meta charSet="utf-8" />
         <title>El Blog de Erick Ruiz</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+        <link rel="canonical" href="https://erickruiz-blog.netlify.app/" />
       </Helmet>
       <div className="info">
         <img
