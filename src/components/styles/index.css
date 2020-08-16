@@ -1,0 +1,33 @@
+.post {
+    padding: 1em;
+    border-radius: 1em;
+    margin: 3em 0em;
+}
+
+.info {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    padding: 1em;
+    border-radius: 1em;
+    margin: 3em 0em;
+    background-color: #202542;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+}
+
+img {
+    width: 22vw;
+    height: 32vh;
+}
+
+@media (max-width: 400px) {
+    img {
+        width: 25vw;
+        height: 22vh;
+    }
+    h1 {
+        font-size: x-large;
+    }
+}

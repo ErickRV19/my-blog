@@ -1,8 +1,10 @@
-.colorss {
-    background-color: rgba(0, 102, 255, 0.959);
+.topBar {
+    background-color: #202542;
     padding: 1em;
     position: relative;
     margin-bottom: 3em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 a {

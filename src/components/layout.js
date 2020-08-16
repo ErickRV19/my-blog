@@ -58,7 +58,7 @@ const Layout = ({ location, title, children }) => {
         padding: ` 0em 2em`,
       }}
     >
-      <div className="colorss"></div>
+      <div className="topBar"></div>
       <header>{header}</header>
       <nav className="nav">
         <a href="/">Inicio</a>
