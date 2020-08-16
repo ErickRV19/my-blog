@@ -18,14 +18,14 @@
 }
 
 img {
-    width: 22vw;
-    height: 32vh;
+    width: 20vw;
+    height: 35vh;
 }
 
 @media (max-width: 400px) {
     img {
         width: 25vw;
-        height: 22vh;
+        height: 20vh;
     }
     h1 {
         font-size: x-large;
