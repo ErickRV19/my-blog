@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -13,6 +14,11 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>El Blog de Erick Ruiz</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="info">
         <img
           src={require("../../content/assets/Erick_rocket.png")}
