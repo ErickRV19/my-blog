@@ -13,7 +13,6 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <title>Blog de Erick Ruiz</title>
       <div className="info">
         <img
           src={require("../../content/assets/Erick_rocket.png")}
