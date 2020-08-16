@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import "../components/styles/index.css"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -12,16 +13,23 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <div className="info">Excelente tenerte por aca de nuevo .</div>
+      <div className="info">
+        <img
+          src={require("../../content/assets/Erick_rocket.png")}
+          alt="img Erick"
+        />
+        <div className="descrip">
+          <h1>
+            Bienvenido a mi blog..!
+            <br /> encontraras post muy interesantes.
+          </h1>
+        </div>
+      </div>
       <SEO title="" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
-            <link
-              rel="stylesheet"
-              href="https://unpkg.com/aos@next/dist/aos.css"
-            />
             <header>
               <h3
                 style={{
