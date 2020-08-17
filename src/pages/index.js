@@ -19,7 +19,7 @@ const BlogIndex = ({ data, location }) => {
         <title>El Blog de Erick Ruiz</title>
         <link rel="canonical" href="https://erickruiz-blog.netlify.app/" />
       </Helmet>
-      <div className="info">
+      <div className="info" id="info">
         <img
           src={require("../../content/assets/Erick_rocket.png")}
           alt="img Erick"
@@ -35,7 +35,7 @@ const BlogIndex = ({ data, location }) => {
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article key={node.fields.slug}>
+          <article id="font" className="font" key={node.fields.slug}>
             <header>
               <h3
                 style={{
