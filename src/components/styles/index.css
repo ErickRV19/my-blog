@@ -69,3 +69,30 @@ img {
         font-size: x-large;
     }
 }
+
+@media (max-width: 425px) {
+    img {
+        width: 25vw;
+        height: 20vh;
+    }
+    h1 {
+        font-size: x-large;
+    }
+}
+
+@media (min-width: 763px) {
+    img {
+        width: 25vw;
+        height: 30vh;
+    }
+}
+
+@media (min-width: 1050px) {
+    img {
+        width: 20vw;
+        height: 25vh;
+    }
+    h1 {
+        font-size: xx-large;
+    }
+}

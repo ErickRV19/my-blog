@@ -103,7 +103,8 @@ const Layout = ({ location, title, children }) => {
         {children}{" "}
       </main>{" "}
       <footer>
-        <div id="info" className="info"></div>.
+        <div id="info" className="info"></div>
+        <div className="register">Gatsby</div>
       </footer>{" "}
     </div>
   )
