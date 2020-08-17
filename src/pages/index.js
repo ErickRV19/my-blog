@@ -54,6 +54,8 @@ const BlogIndex = ({ data, location }) => {
             </header>{" "}
             <section>
               <p
+                id="font"
+                className="font"
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
