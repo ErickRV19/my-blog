@@ -65,7 +65,23 @@ a:hover {
     color: #000000;
 }
 
-@media (max-width: 400px) {
+@media (min-width: 300px) {
+    #iconTheme {
+        width: 10vw;
+        height: 5vh;
+        margin: 0;
+    }
+}
+
+@media (min-width: 400px) {
+    #iconTheme {
+        width: 8vw;
+        height: 5vh;
+        margin: 0;
+    }
+}
+
+@media (min-width: 425px) {
     #iconTheme {
         width: 8vw;
         height: 5vh;
@@ -81,17 +97,9 @@ a:hover {
     }
 }
 
-@media (max-width: 425px) {
-    #iconTheme {
-        width: 8vw;
-        height: 5vh;
-        margin: 0;
-    }
-}
-
 @media (min-width: 1024px) {
     #iconTheme {
-        width: 6vw;
+        width: 5vw;
         height: 5vh;
         margin: 0;
     }
@@ -99,7 +107,7 @@ a:hover {
 
 @media (min-width: 1050px) {
     #iconTheme {
-        width: 4vw;
+        width: 3vw;
         height: 5vh;
         margin: 0;
     }
