@@ -74,6 +74,7 @@ module.exports = {
                 pathToConfigModule: `src/utils/typography`,
             },
         },
+        `gatsby-remark-reading-time`,
         `gatsby-plugin-offline`,
         {
             resolve: `gatsby-plugin-offline`,

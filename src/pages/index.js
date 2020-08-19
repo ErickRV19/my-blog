@@ -16,9 +16,9 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Helmet defer={false}>
         <meta charSet="utf-8" />
-        <title>El Blog de Erick Ruiz</title>
+        <title> El Blog de Erick Ruiz </title>{" "}
         <link rel="canonical" href="https://erickruiz-blog.netlify.app/" />
-      </Helmet>
+      </Helmet>{" "}
       <div className="info" id="info">
         <img
           src={require("../../content/assets/Erick_rocket.png")}
@@ -27,13 +27,14 @@ const BlogIndex = ({ data, location }) => {
         <div className="descrip">
           <h1>
             Bienvenido a mi blog..!
-            <br /> encontraras post muy interesantes.
-          </h1>
-        </div>
-      </div>
-      <SEO title="" />
+            <br /> encontraras post muy interesantes.{" "}
+          </h1>{" "}
+        </div>{" "}
+      </div>{" "}
+      <SEO title="" />{" "}
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
+
         return (
           <article id="font" className="font" key={node.fields.slug}>
             <header>
@@ -51,6 +52,7 @@ const BlogIndex = ({ data, location }) => {
                 </Link>{" "}
               </h3>{" "}
               <small> {node.frontmatter.date} </small>{" "}
+              <small>|| {node.frontmatter.readingTime} de lectura</small>{" "}
             </header>{" "}
             <section>
               <p
@@ -90,6 +92,8 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            readingTime
+            tags
           }
         }
       }
